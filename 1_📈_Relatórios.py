@@ -169,7 +169,7 @@ else:
 
     for c in categoria:
         categoria_df_2 = categoria_df[categoria_df["Categoria"] == c]
-        with st.expander(f"{c} // R$ {categoria_df_2["Valor"].sum():.2f} // {(categoria_df_2["Valor"].sum()/receita_mensal)*100:.2f}%"):
+        with st.expander(f"{c} // Valor Total Gasto // Porcentagem do Total"):
             st.dataframe(categoria_df_2)
 
 st.divider()
